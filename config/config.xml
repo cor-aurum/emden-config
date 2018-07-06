@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<emden>
+	<datafields>
+		<datafield name="Title" />
+		<datafield name="Text" />
+		<datafield name="Url" />
+		<datafield name="Urltext" />
+		<datafield name="Shorttext" />
+	</datafields>
+	<sources>
+		<csvsource path="/home/felix/Downloads/test.csv" firstRowHeader="true">
+			<datafields>
+				<datafield name="Title" col="1" />
+				<datafield name="Text" col="2" />
+				<datafield name="Url" col="3" />
+				<datafield name="Urltext" col="4" />
+			</datafields>
+			<schedule cron="0 4 * * * ?" />
+		</csvsource>
+	</sources>
+</emden>
