@@ -8,7 +8,7 @@
 		<datafield name="Shorttext" />
 	</datafields>
 	<sources>
-		<csvsource path="/home/felix/Downloads/test.csv" firstRowHeader="true">
+		<csvsource path="/home/felix/Downloads/test.csv" separator="," firstRowHeader="true">
 			<datafields>
 				<datafield name="Title" col="1" />
 				<datafield name="Text" col="2" />
