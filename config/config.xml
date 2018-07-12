@@ -8,14 +8,12 @@
 		<datafield name="Shorttext" />
 	</datafields>
 	<sources>
-		<csvsource path="/home/felix/Downloads/test.csv" separator="," firstRowHeader="true">
+		<csvsource path="/home/felix/Downloads/convertcsv.csv" separator="," firstRowHeader="true">
 			<datafields>
 				<datafield name="Title" col="1" />
 				<datafield name="Text" col="2" />
-				<datafield name="Url" col="3" />
-				<datafield name="Urltext" col="4" />
 			</datafields>
-			<schedule cron="0 4 * * * ?" />
+			<schedule cron="0 */10 * ? * *" />
 		</csvsource>
 	</sources>
 </emden>
