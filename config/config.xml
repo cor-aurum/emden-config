@@ -1,19 +1,20 @@
 <?xml version="1.0"?>
 <emden>
 	<datafields>
-		<datafield name="Title" />
-		<datafield name="Text" />
-		<datafield name="Url" />
-		<datafield name="Urltext" />
-		<datafield name="Shorttext" />
+		<datafield name="Name" />
+		<datafield name="Adresse" />
+		<datafield name="Telefonnummer" />
+		<datafield name="Email" />
 	</datafields>
 	<sources>
-		<csvsource path="/home/felix/Downloads/convertcsv.csv" separator="," firstRowHeader="true">
+		<csvsource id="SampleCSV" path="/home/felix/Downloads/datagen.txt" separator="," firstRowHeader="false">
 			<datafields>
-				<datafield name="Title" col="1" />
-				<datafield name="Text" col="2" />
+				<datafield name="Name" col="1" />
+				<datafield name="Adresse" col="2" />
+				<datafield name="Telefonnummer" col="3" />
+				<datafield name="Email" col="4" />
 			</datafields>
-			<schedule cron="0 */10 * ? * *" />
+			<schedule cron="0 0/10 * * * ?" />
 		</csvsource>
 	</sources>
 </emden>
