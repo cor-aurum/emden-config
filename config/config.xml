@@ -7,15 +7,16 @@
 		<datafield name="Email" />
 	</datafields>
 	<sources>
-		<csvsource id="SampleCSV" path="/home/felix/Downloads/convertcsv.csv" separator="," firstRowHeader="false">
+		<csvsource id="SampleCSV" path="/home/felix/Downloads/datagen.txt" separator="," firstRowHeader="false">
 			<datafields>
 				<datafield name="Name" col="1" />
 				<datafield name="Adresse" col="2" />
 				<datafield name="Telefonnummer" col="3" />
 				<datafield name="Email" col="4" />
 			</datafields>
-			<schedule cron="0 0/10 * * * ?" />
+			<schedule cron="0 0 * * * ?" />
 		</csvsource>
+		<!--
 		<sqlsource id="SampleSQL">
 			<database id="primary" jdbc="/home/felix/Downloads/jdbc.jar" driver="org.mariadb.jdbc.Driver" url="jdbc:mariadb://localhost:3306/emden" user="root" password="felix"/>				
 			<datafields>
@@ -23,5 +24,6 @@
 			</datafields>
 			<schedule cron="0 0/15 * * * ?" />
 		</sqlsource>
+		-->
 	</sources>
 </emden>
