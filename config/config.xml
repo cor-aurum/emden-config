@@ -18,7 +18,7 @@
 		</csvsource>
 		<!--
 		<sqlsource id="SampleSQL">
-			<database id="primary" jdbc="/home/felix/Downloads/jdbc.jar" driver="org.mariadb.jdbc.Driver" url="jdbc:mariadb://localhost:3306/emden" user="root" password="felix"/>				
+			<database id="primary" jdbc="/home/felix/Downloads/jdbc.jar" driver="org.mariadb.jdbc.Driver" url="jdbc:mariadb://localhost:3306/emden" user="user" password="password"/>				
 			<datafields>
 				<datafield name="Name,Adresse,Telefonnummer,Email" sql="SELECT * FROM emden;" database="primary"/>
 			</datafields>
